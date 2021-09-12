@@ -1,2 +1,16 @@
 @import "./variables.less"; 
 @import "./mixins.less";
+
+//Reset settings 
+* {
+    .reset()
+}
+
+//Uses .block() to set elements listed to block. 
+//Also makes default color white and font-family 'Roboto'
+html {
+    font-family: @sub-family;
+    color: @white;
+    article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    .block()
+} 
