@@ -116,3 +116,94 @@ html {
     }
 }
  
+
+//Home Page media query
+@media (min-width: 600px) {
+
+    .side-by-side-a,.side-by-side-b {
+        width: 50%;
+        align-self: center;
+    }
+    html body main .side-by-side-container {
+        flex-direction: revert;
+    }
+
+    .navbar {
+        text-align: left;
+    }
+    .img-dudes {
+        margin: 0px;
+    }
+    footer {
+        margin-top: 21px;
+    }
+}
+
+
+//Home page media query
+@media (min-width: 975px) {
+
+    html body {
+        background-image: url(images/dudes-background.jpg);
+        header {
+            margin-bottom: 29px;
+            background: @brown;
+            padding-top: 20px;
+            width: 900px;
+            margin: 0 auto;
+            height: 213px;
+            box-shadow: @shadow;
+            .nav {
+                display: none;
+                display: flex;
+                justify-content: center;
+                padding: 35px 0 0 247px;
+                
+            }
+            .navbar {
+                display: none;
+            }
+            ul.nav{
+                display: flex;
+                a.nav-link.current {
+                    color: @gold;   
+                }
+                .nav-link {
+                    display: block;
+                    padding: .5rem 1rem;
+                    font-family: @head-family;
+                    font-size: @medium-text;
+                    color: @white;
+                
+                }
+            }
+        }
+        .sub-header {
+            width: 900px;
+            margin: 46px auto 0 auto;
+            .logo-container {
+                width: 846px;
+                margin: -125px auto 0 auto;
+                img.logo {
+                    margin: 0px;
+                }
+            }
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: @brown;
+            padding-top: 64px;
+            margin-top: -27px;
+            box-shadow: @shadow;
+            .side-by-side-container {
+                padding: 17px 16px 49px 16px;
+                
+            }
+        }
+        footer {
+            margin: 0px;
+        }  
+    }
+    
+}  
