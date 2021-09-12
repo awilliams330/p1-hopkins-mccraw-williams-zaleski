@@ -1,2 +1,209 @@
 @import "./variables.less"; 
 @import "./mixins.less";
+
+//Reset settings 
+* {
+    .reset();
+}
+
+//Uses .block() to set elements listed to block. 
+//Also makes default color white and font-family 'Roboto'
+html {
+    font-family: @sub-family;
+    color: @white;
+    article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    .block();
+    }
+
+    //Home page styling starts
+    body {
+        background: @darker-brown;
+        //Adds space between logo and hero image
+        header {
+            margin-bottom: 116px;
+            //The green bar that the logo sits on
+            .sub-header {
+                background: @green;
+                height: 126px;
+                border-bottom: 4px solid @darker-green;
+            }
+            //Removes the other Nav from mobile view
+            .nav {
+                display: none;
+            }
+            //Moves hamburger menu to the right and centers text in hamburger menu
+            .navbar {
+                background: @green;
+                justify-content: flex-end;
+                padding-top: 15px;
+                text-align: center;
+            }
+            //Changes color of text in hamburger menu
+            .navbar-dark .navbar-nav .nav-link {
+                color: @white;
+            }
+            //The color of the selected menu item in the hamburger
+            .navbar-dark .navbar-nav .active>.nav-link {
+                color: @gold;
+            }
+            //Font size for the text inside the hamburger menu
+            .nav-item {
+                font-size: @text;
+            }
+        }
+        main {
+            h1 {
+                font-family: @head-family;
+                color: @gold;
+                font-size: @text + .1;
+                text-align: center;
+            }
+            max-width: 900px;
+            margin: 0 auto;
+            img.hero-home {
+                width: 91%;
+                box-shadow: @lighter-shadow;
+                .frame();
+                display: block;
+                margin: 21px auto;
+            }
+            .side-by-side-container {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 12px 1%;
+                button.btn-lg {
+                    .home-button();
+                    padding: 21px;
+                    box-shadow: @shadow;
+                    p.p-to-go {
+                        color: @brown;
+                        font-size: @medium-text;
+                        font-family: @head-family;
+                        margin: 0px;
+                    }
+                }
+                img.dudes {
+                    width: 87%;
+                    border-radius: 12px;
+                    display: block;
+                    margin: 26px auto;
+                    box-shadow: @shadow;
+                }
+            }        
+        }
+        footer {
+            color: white;
+            background: @darker-green;
+            padding: 79px 0px;
+            text-align: center;
+            font-family: @head-family;
+            font-size: @text;
+            .footer-h4 {
+                font-size: @medium-text;
+                color: @gold;
+                font-size: @medium-text;
+                color: @gold;
+                width: 90%;
+                margin: 13px auto;
+            }
+            .fab {
+                font-size: @text + 1.3;
+                margin: .5%;
+                color: @gold;
+        
+            }
+        }
+    }
+}
+ 
+
+//Home Page media query
+@media (min-width: 600px) {
+
+    .side-by-side-a,.side-by-side-b {
+        width: 50%;
+        align-self: center;
+    }
+    html body main .side-by-side-container {
+        flex-direction: revert;
+    }
+
+    .navbar {
+        text-align: left;
+    }
+    .img-dudes {
+        margin: 0px;
+    }
+    footer {
+        margin-top: 21px;
+    }
+}
+
+
+//Home page media query
+@media (min-width: 975px) {
+
+    html body {
+        background-image: url(images/dudes-background.jpg);
+        header {
+            margin-bottom: 29px;
+            background: @brown;
+            padding-top: 20px;
+            width: 900px;
+            margin: 0 auto;
+            height: 213px;
+            box-shadow: @shadow;
+            .nav {
+                display: none;
+                display: flex;
+                justify-content: center;
+                padding: 35px 0 0 247px;
+                
+            }
+            .navbar {
+                display: none;
+            }
+            ul.nav{
+                display: flex;
+                a.nav-link.current {
+                    color: @gold;   
+                }
+                .nav-link {
+                    display: block;
+                    padding: .5rem 1rem;
+                    font-family: @head-family;
+                    font-size: @medium-text;
+                    color: @white;
+                
+                }
+            }
+        }
+        .sub-header {
+            width: 900px;
+            margin: 46px auto 0 auto;
+            .logo-container {
+                width: 846px;
+                margin: -125px auto 0 auto;
+                img.logo {
+                    margin: 0px;
+                }
+            }
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: @brown;
+            padding-top: 64px;
+            margin-top: -27px;
+            box-shadow: @shadow;
+            .side-by-side-container {
+                padding: 17px 16px 49px 16px;
+                
+            }
+        }
+        footer {
+            margin: 0px;
+        }  
+    }
+    
+}  
