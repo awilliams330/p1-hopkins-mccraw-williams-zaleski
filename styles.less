@@ -14,4 +14,44 @@ html {
     article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     .block();
     }
+
+    //Home page styling starts
+    body {
+        background: @darker-brown;
+        //Adds space between logo and hero image
+        header {
+            margin-bottom: 116px;
+            //The green bar that the logo sits on
+            .sub-header {
+                background: @green;
+                height: 126px;
+                border-bottom: 4px solid @darker-green;
+            }
+            //Removes the other Nav from mobile view
+            .nav {
+                display: none;
+            }
+            //Moves hamburger menu to the right and centers text in hamburger menu
+            .navbar {
+                background: @green;
+                justify-content: flex-end;
+                padding-top: 15px;
+                text-align: center;
+            }
+            //Changes color of text in hamburger menu
+            .navbar-dark .navbar-nav .nav-link {
+                color: @white;
+            }
+            //The color of the selected menu item in the hamburger
+            .navbar-dark .navbar-nav .active>.nav-link {
+                color: @gold;
+            }
+            //Font size for the text inside the hamburger menu
+            .nav-item {
+                font-size: @text;
+            }
+        }
+    }
+    
 }
+
