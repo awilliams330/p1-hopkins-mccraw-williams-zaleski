@@ -51,6 +51,46 @@ html {
                 font-size: @text;
             }
         }
+        main {
+            h1 {
+                font-family: @head-family;
+                color: @gold;
+                font-size: @text + .1;
+                text-align: center;
+            }
+            max-width: 900px;
+            margin: 0 auto;
+            img.hero-home {
+                width: 91%;
+                box-shadow: @lighter-shadow;
+                .frame();
+                display: block;
+                margin: 21px auto;
+            }
+            .side-by-side-container {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 12px 1%;
+                button.btn-lg {
+                    .home-button();
+                    padding: 21px;
+                    box-shadow: @shadow;
+                    p.p-to-go {
+                        color: @brown;
+                        font-size: @medium-text;
+                        font-family: @head-family;
+                        margin: 0px;
+                    }
+                }
+                img.dudes {
+                    width: 87%;
+                    border-radius: 12px;
+                    display: block;
+                    margin: 26px auto;
+                    box-shadow: @shadow;
+                }
+            }        
+        }
     }
     
 }
