@@ -131,13 +131,12 @@ main {
         font-family: @head-family;
         color: @gold;
         font-size: @text - .1;
-        text-decoration-style: none;
     }
         li {
             font-family: @sub-family;
             color: @white;
             font-size: @text - .3;
-            text-decoration-style: none;
+            list-style-type: none;
             padding-left: 2%;
         }
 }
@@ -178,10 +177,26 @@ aside {
     }
 }
 
+//Food Menu page media query
+@media (min-width: 750px) {
+    .food-page {
+        display: flex;
+    }
+    main {
+        padding-left: 2%;
+        h2 {
+            text-align: left;
+            padding-top: 3%;
+        }
+    }
+    
+}
 
-//Home page media query
+
+//975px media query
 @media (min-width: 975px) {
 
+    //Home page stylings
     html body {
         background-image: url(images/dudes-background.jpg);
         header {
@@ -245,5 +260,8 @@ aside {
             margin: 0 auto;
         }  
     }
+
+    
+    
     
 }  
