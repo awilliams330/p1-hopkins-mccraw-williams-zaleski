@@ -162,12 +162,12 @@ aside {
         color: @white;
         margin-right: 2%;
     }
-}
-
-.contactform {
-    font-family: @head-family;
-    color: @gold;
-    margin-bottom: 2%;
+    .contactform {
+        font-family: @head-family;
+        color: @gold;
+        margin-bottom: 2%;
+        padding-bottom: 3%;
+    }
 }
 
 label {
@@ -183,7 +183,15 @@ label {
 .form-control {
     margin-right: 4%;
 }
- 
+
+img.contact-image {
+    width: 75%;
+    box-shadow: @lighter-shadow;
+    .frame();
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 //Home Page media query
 @media (min-width: 600px) {
