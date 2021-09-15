@@ -157,15 +157,16 @@ aside {
 // Contact Page Styling Starts
 
 .contactpage {
+    padding: 0 5%;
     p {
         font-family: @sub-family;
         color: @white;
-        margin-right: 2%;
+        margin: 4%;
     }
     .contactform {
         font-family: @head-family;
         color: @gold;
-        margin-bottom: 2%;
+        margin-bottom: 11%;
         padding-bottom: 3%;
     }
 }
@@ -177,7 +178,7 @@ label {
 .home-button {
     color: @darker-brown;
     padding: 2%;
-    margin: 4%;
+    margin: 3.5% 7%;
 }
 
 .form-control {
@@ -189,8 +190,7 @@ img.contact-image {
     box-shadow: @lighter-shadow;
     .frame();
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 8% auto 0 auto;
 }
 
 //Home Page media query
@@ -228,8 +228,23 @@ img.contact-image {
         }
     }
 
-   
+//Contact Page
+    .contactpage p {
+        margin: 4% 2%;
+    }
     
+}
+
+
+//Contact page 958px media query
+@media (min-width: 975px) {
+    .contactpage {
+        padding: 100px 3%;
+        margin-bottom: 0px;
+    .contactform {
+        margin-bottom: 0px;
+    }
+    }
 }
 
 
