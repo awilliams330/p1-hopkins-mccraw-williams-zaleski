@@ -193,7 +193,7 @@ img.contact-image {
     margin: 8% auto 0 auto;
 }
 
-// About Page Styling Start
+// **************** About Page Styling Start ****************
 
 .title-header {
     text-align: center;
@@ -209,7 +209,7 @@ img.contact-image {
 
     section {
         width: 100%;
-        padding: 1%;
+        padding: 0 3%;
     }
 
     figure {
@@ -221,17 +221,31 @@ img.contact-image {
 }
 
 .reviews {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 3%;
     
     img {
         width: 100%;
     }
 }
 
+.review-container {
+    display: flex;
+    padding: 3%;
+
+        p {
+            padding: 3%;
+        }
+
+        .author {
+            color: @gold;
+        }
+}
+
+// Sets font color of quotes to white
 .quote {
     color: @white;
 }
+
 
 
 
