@@ -8,6 +8,9 @@ The group had no issues.
 
 ### Resources
 
-* Images ([Pintrest](https://www.pinterest.com/) and [Pexels](https://www.pexels.com/))
+* [LESS](https://lesscss.org/)
 * Bootstrap 4/5 - [Contact Form](https://getbootstrap.com/docs/5.1/forms/layout/), [Navbar](https://getbootstrap.com/docs/5.1/components/navbar/), [Nav](https://getbootstrap.com/docs/5.1/components/navs-tabs/), [Button](https://getbootstrap.com/docs/5.1/components/buttons/)
+* Images ([Pintrest](https://www.pinterest.com/) and [Pexels](https://www.pexels.com/))
 * [Gradient Tool](https://cssgradient.io/)
+
+
